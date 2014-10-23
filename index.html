@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="theme.default.css"/>
+</head>
+<body>
+	<input id="picker" type="text"/>
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="jquery.monthpicker.js"></script>
+	<script>
+		$("#picker").monthpicker({
+			onSelected: function (year, month) {
+				console.log(year, month);
+			}
+		});
+	</script>
+</body>
+</html>
